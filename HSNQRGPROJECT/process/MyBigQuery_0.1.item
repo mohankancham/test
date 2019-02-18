@@ -109,13 +109,45 @@
     <routinesParameter id="_SQeLwDFlEempeZxEfPWqOA" name="TalendStringUtil"/>
     <routinesParameter id="_SQ_JIDFlEempeZxEfPWqOA" name="SQLike"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_89146cd0-ee1a-40ac-bca9-8239a6fab170"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PZn4fmOAcqQ55T9wvixMxeH9IKwsnns/sw+yMHDZ6uxhEIR/w0AMkY/4dhvkZbd87smI0x0iD7Sl
-6znu7ycnbQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bf3f4d5f-9eb3-4401-8c28-90597f15fb3b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YlrfdSY3BKPuVpMdVt1M3JlMzgrrbvQyE9Ng8CwAnaJobfSJqFzrFC0XLeuQcM/aKEYLMoUkEpsE
-KmqCFYmA/g==</DigestValue></Reference></SignedInfo><SignatureValue>wn5ubOEXMWrM+cxL0X5AIphiuAHfbivP6Ff+JmAdsmLj6O1TK/ZViCmbD9I/HSdrqmj+O5oC2kPB
-SCwGhif5SC/5UKGxvrwG+8UXvf/KpAhujTWEgT3b0B4c27vaO5qW9WRLRD0RqGpRtAl6/+T3DLV0
-1REA6bGCdMudJobx8/LfTCIwrd7XciF0kRpBfV6YTggKzcdJHCCYZSngfUnKt+KdqCr7jpi5mZTa
-OBpm1LKnWnNDuxsknMAHJy83d4K+PwfBIRYC2azbWbA2LWbXj8ENF2SqzR2/cr1WUtYz/GsdBjDW
-oQganXBpP6umihnVPTIaXtub0w5dtzrRdg++6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <node componentName="tGoogleDataprocManage" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGoogleDataprocManage_1"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;csd-automation&quot;"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;qrg-talendProc01&quot;"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="true"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;C:/work/8thFebcsd-automation-qrg-service-account.json&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION" value="START"/>
+    <elementParameter field="OPENED_LIST" name="CLUSTER_VERSION" value="&quot;1.1&quot;"/>
+    <elementParameter field="OPENED_LIST" name="ZONE" value="&quot;us-east1-b&quot;"/>
+    <elementParameter field="TEXT" name="MASTER_NUM_INSTANCES" value="1"/>
+    <elementParameter field="OPENED_LIST" name="MASTER_INSTANCE_TYPE" value="&quot;n1-standard-2&quot;"/>
+    <elementParameter field="TEXT" name="WORKER_NUM_INSTANCES" value="2"/>
+    <elementParameter field="OPENED_LIST" name="WORKER_INSTANCE_TYPE" value="&quot;n1-standard-2&quot;"/>
+    <elementParameter field="TEXT" name="SECONDARY_WORKER_NUM_INSTANCES" value="0"/>
+    <elementParameter field="CHECK" name="WAIT_FOR_CLUSTER_READY" value="true"/>
+    <elementParameter field="TEXT" name="MASTER_DISK_SIZE" value="500"/>
+    <elementParameter field="TEXT" name="MASTER_SSD_NB" value="0"/>
+    <elementParameter field="TEXT" name="WORKER_DISK_SIZE" value="500"/>
+    <elementParameter field="TEXT" name="WORKER_SSD_NB" value="0"/>
+    <elementParameter field="CHECK" name="DEFINE_NETWORK" value="false"/>
+    <elementParameter field="TEXT" name="NETWORK" show="false" value="&quot;default&quot;"/>
+    <elementParameter field="CHECK" name="DEFINE_SUBNETWORK" value="false"/>
+    <elementParameter field="TEXT" name="SUBNETWORK" show="false" value="&quot;default&quot;"/>
+    <elementParameter field="TABLE" name="TAGS"/>
+    <elementParameter field="TABLE" name="INITIALIZATION_ACTIONS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tGoogleDataprocManage_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_faa19829-bee8-47f2-b575-5bbb9e8326ce"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>c4DQIHcuSPyDyOfjseqLn/0+g/ELfskpOdvKD/k0q9pQHe3V0ASuPldOwgIzcrfEZ4WOkwDFPIZE
+fnVpChetTw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_457475d9-e50e-4f03-99db-409ca74af3ba"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y/jMngumyLcoHmWY10TT+iktLi6F7CtXCpLkqfcRokMRFbg/jHrRAbS+2D3G8duz8Zg0T9J29Npz
+JUbASktRqQ==</DigestValue></Reference></SignedInfo><SignatureValue>UTmN8lKjj47ygTdJ/ul4IsIWkdS1fhAIYW7hqGw0SW3+0fl8C9a40qbvQcsiesSl8S66DVQyFXiP
+BrzZ8FSZHHv9BMdC+/ijmIXb0dSAUpHcbC3Uz2+c1obmI9NFWyQ7Xl3Cp8OcIdfZYquzPjHGdfgw
+EzzXBu79q3js0gDd4AjE1I2wKi4b9vxg9OdvT8UV8d7fGtmxBoeyEq3DSUq6iezi+Yf6CtJgbM23
+UbWnpyhscPpsD1wRxKc1nl2OdFG4brKFwcvCmzvTNqztPlEUere1E/KWMZrf+kioTrC/k7en8NaN
+4Eatc+b7KPkJFmsDfUdAF1Y1ctdBUfTaGxOxXg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -139,4 +171,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bf3f4d5f-9eb3-4401-8c28-90597f15fb3b" Target="#_89146cd0-ee1a-40ac-bca9-8239a6fab170"><Timestamp>2019-02-15 21:12:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_457475d9-e50e-4f03-99db-409ca74af3ba" Target="#_faa19829-bee8-47f2-b575-5bbb9e8326ce"><Timestamp>2019-02-18 11:57:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

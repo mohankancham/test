@@ -115,27 +115,27 @@
     <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;talendproc01&quot;"/>
     <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="true"/>
     <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;C:\\work\\8thFebcsd-automation-qrg-service-account.json&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="ACTION" value="START"/>
-    <elementParameter field="OPENED_LIST" name="CLUSTER_VERSION" value="&quot;1.1&quot;"/>
-    <elementParameter field="OPENED_LIST" name="ZONE" value="&quot;us-east1-b&quot;"/>
-    <elementParameter field="TEXT" name="MASTER_NUM_INSTANCES" value="1"/>
-    <elementParameter field="OPENED_LIST" name="MASTER_INSTANCE_TYPE" value="&quot;n1-standard-2&quot;"/>
-    <elementParameter field="TEXT" name="WORKER_NUM_INSTANCES" value="2"/>
-    <elementParameter field="OPENED_LIST" name="WORKER_INSTANCE_TYPE" value="&quot;n1-standard-2&quot;"/>
-    <elementParameter field="TEXT" name="SECONDARY_WORKER_NUM_INSTANCES" value="0"/>
-    <elementParameter field="CHECK" name="WAIT_FOR_CLUSTER_READY" value="true"/>
-    <elementParameter field="TEXT" name="MASTER_DISK_SIZE" value="500"/>
-    <elementParameter field="TEXT" name="MASTER_SSD_NB" value="0"/>
-    <elementParameter field="TEXT" name="WORKER_DISK_SIZE" value="500"/>
-    <elementParameter field="TEXT" name="WORKER_SSD_NB" value="0"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION" value="STOP"/>
+    <elementParameter field="OPENED_LIST" name="CLUSTER_VERSION" show="false" value="&quot;1.1&quot;"/>
+    <elementParameter field="OPENED_LIST" name="ZONE" show="false" value="&quot;us-east1-b&quot;"/>
+    <elementParameter field="TEXT" name="MASTER_NUM_INSTANCES" show="false" value="1"/>
+    <elementParameter field="OPENED_LIST" name="MASTER_INSTANCE_TYPE" show="false" value="&quot;n1-standard-2&quot;"/>
+    <elementParameter field="TEXT" name="WORKER_NUM_INSTANCES" show="false" value="2"/>
+    <elementParameter field="OPENED_LIST" name="WORKER_INSTANCE_TYPE" show="false" value="&quot;n1-standard-2&quot;"/>
+    <elementParameter field="TEXT" name="SECONDARY_WORKER_NUM_INSTANCES" show="false" value="0"/>
+    <elementParameter field="CHECK" name="WAIT_FOR_CLUSTER_READY" show="false" value="true"/>
+    <elementParameter field="TEXT" name="MASTER_DISK_SIZE" show="false" value="500"/>
+    <elementParameter field="TEXT" name="MASTER_SSD_NB" show="false" value="0"/>
+    <elementParameter field="TEXT" name="WORKER_DISK_SIZE" show="false" value="500"/>
+    <elementParameter field="TEXT" name="WORKER_SSD_NB" show="false" value="0"/>
     <elementParameter field="CHECK" name="DEFINE_NETWORK" show="false" value="false"/>
     <elementParameter field="TEXT" name="NETWORK" show="false" value="&quot;default&quot;"/>
-    <elementParameter field="CHECK" name="DEFINE_SUBNETWORK" value="true"/>
-    <elementParameter field="TEXT" name="SUBNETWORK" value="&quot;subnet-1-east1&quot;"/>
-    <elementParameter field="TABLE" name="TAGS">
+    <elementParameter field="CHECK" name="DEFINE_SUBNETWORK" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SUBNETWORK" show="false" value="&quot;subnet-1-east1&quot;"/>
+    <elementParameter field="TABLE" name="TAGS" show="false">
       <elementValue elementRef="TAG" value="&quot;custom-ssh&quot;"/>
     </elementParameter>
-    <elementParameter field="TABLE" name="INITIALIZATION_ACTIONS"/>
+    <elementParameter field="TABLE" name="INITIALIZATION_ACTIONS" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <subjob>
@@ -143,13 +143,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c9d0d73f-6b68-403b-b134-dab6451c7daa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tmzD+Om2ayyrneDRN3jFl6R806NuoPRhMi417RMHQL+CL7XDOuTWo6/XXqRUR43d+b1jzuLuFTfv
-k810GF20XA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e42a4be9-6186-4142-bb7d-e50236958a0b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XnlU1BaADHcD14bCNR6OgQ77Q0micPAmHwsCo9Jlv37ucV9lImkm/dA+rHDCcaAtOf69wSqW2vaK
-daQwwfYmqA==</DigestValue></Reference></SignedInfo><SignatureValue>CQnFfAPDMbv9RbmhwVw/bfgduRN6tGWhtwsHC9KEzZh206JMHu1Bmc7MRIZvUtuQJBC4ooAcfJCX
-J7Us6/vx+ByAM8gyafQ5X9Lr9QJhJeQrfWdQ0tQ2mJ4GAsJefKHh4p7JGm6L6/Bp1vqpGSvZQVOa
-sMPkHAerJt3lJGbXRz4akMhwdqATMvVt7JzAZtaRbllFHIzBx+iOxgvHzZBomXOw0laA3yd8Nems
-94Ju6Bu20ByVEVpVpk9ZHX+aCn1vbFxejIJtTkhTQ/E3tc1AxDh9KSEeZRhHmwpVFSGKuBuLWkD9
-PY0qgAoObJs8DMAIi3/BVFYhQaptqA0SuCIM6g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_adf0c015-9442-4a89-86a4-08167900b2b0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A6Eyrvislmzm7LGcFiejH9De3Y2p18PLz2/xyhP9D/kZL4jabksyjFAUP0UUkLjbSbGj8/6hv9Go
+e8CKaniUWQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_074ca361-1a34-4f82-b55e-d9c0751c56af"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b6TSM22n2ZykkOIDATQ3jcVBOOmJIgq5u3SlLB2RgnfX+jEiQh5kq/fF+Mku8D/ECTAjKdEw42HG
+/5SVhFgRAg==</DigestValue></Reference></SignedInfo><SignatureValue>kYkcfpc6Y9dLHlCyDEIvhzKneccGS0h7mb9aXvhEwyGgAYbq9Ks3ktOKQmC+S45q0NYMW+uUZKO0
+bzaHwwDPZLQprWBhcAzkIRecqSnDWw3a8KLXOk2XpzOi34vrb2NrbTqeC5yAW9PQVuqHtSIjCBox
+AVDM1rox0EqC9nRYSaReolosgvlMoOD+GW0jv7fCWadxdPww28PeQxkE09h4I95IXvZrXy9/8Wcz
+0osxKDqzsTHHeidEUBm6+YFgZth4OeDSJmRaOKzEHnc17IHon74yRyyBv1gWooKBRx7O0N077o+Z
+gxEH6lZ82ZQAmq6g+ENnf5UIydZk5aLRwkfWOg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -173,4 +173,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e42a4be9-6186-4142-bb7d-e50236958a0b" Target="#_c9d0d73f-6b68-403b-b134-dab6451c7daa"><Timestamp>2019-02-18 12:05:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_074ca361-1a34-4f82-b55e-d9c0751c56af" Target="#_adf0c015-9442-4a89-86a4-08167900b2b0"><Timestamp>2019-02-18 12:06:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

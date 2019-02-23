@@ -109,26 +109,12 @@
     <routinesParameter id="_SQeLwDFlEempeZxEfPWqOA" name="TalendStringUtil"/>
     <routinesParameter id="_SQI0kDFlEempeZxEfPWqOA" name="TalendString"/>
   </parameters>
-  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128" sizeX="32" sizeY="35">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_1"/>
-    <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/rajesh_kumar_nimmaga/Documents/RajeshWorkspace&quot;"/>
-    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;C:/Windows/system32/cmd.exe /k C:/Program Files (x86)/Google/Cloud SDK/cloud_env.bat&quot;"/>
-    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
-    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
-    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
-    <elementParameter field="TABLE" name="PARAMS"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSystem_1"/>
-  </node>
   <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96" sizeX="32" sizeY="35">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_2"/>
     <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Users/rajesh_kumar_nimmaga/Documents/RajeshWorkspace&quot;"/>
     <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;gcloud dataproc jobs wait job-rbc-test --project csd-automation&quot;"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;gcloud dataproc jobs submit spark --cluster qrg-talend-latest2 --jar gs://qrgclient/dataproc-poc/QVC_POC-0.0.1-jar-with-dependencies.jar -- gs://qrgclient/dataproc-poc/MOCK_DATA.csv gs://qrgclient/dataproc-poc/RBC_CLIC_ORDERS2.csv&quot;"/>
     <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
     <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
@@ -137,22 +123,18 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSystem_2"/>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSystem_1" offsetLabelX="0" offsetLabelY="0" source="tSystem_1" target="tSystem_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_2"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b82adf66-589d-4fe6-831d-5fb65cd4fd4a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gGEXqo8mdyEpCXAEvSi+WO3m3tBOWlDkfc68+mJs5ul/0AahBUkf9Oh/3ijYCL0jDHvEXoMfLy9p
-NzCz/Grglw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eba2d6a0-31cf-4d51-9151-72e3b543c2ea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AatVP6TYkYXDZCC9aPpFuQUJGzX9BQXhp6XMEsXA7Zy5gGk5D2EtHQ9DVuc3EYuGxPFVhTf+9yEv
-2ElR5BMmVg==</DigestValue></Reference></SignedInfo><SignatureValue>QtFdIEOpaad5rgIDC40OwHxZgOh5LM5oVzIGK/kBSliiqCNsf/sV7bQT2uAw7epiP9LHM6nJaZDW
-qUKbwtamIgdJXX0uoKzFlBt1tsgDasKHSxArmx8lho94GnYHot9pZhnh14BXnwNkO2w3bWOPOyR0
-sZkebH1nXFzzwLd1gq4uyEebGh8n+Md21xgSXKWKD/dOXnkbIshh7vOrjeubOBiS1eedvLxuzSJ3
-u6SY5hR+/keEcHR3Kpu0MurYSgYz1mrmSQVYGn/wAQXoCq0xycWjdtuUowt1WMdMhpEjNWh3slhI
-7N/77S+jAwvzwbIYP2xVGVZANoVLwuRXrQxz4Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fe8f9ab2-79ac-4c70-9b9f-ceba629f94c2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JaTZ8byD2TgaUCdUmPRoNUn2FY8etIcC5dugca+PhdjWhhfQ1xC4rK1ZbHTkb/ZRK+aCiyWllzov
+dxktqTQURQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a3408052-d804-4c7f-a538-ab500a541804"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EiCpvIIKUwYRkv9cQbGJpP6REALN0SDdnUvMNzRsppMOTrxp2e5eTmaCEAFJQIfiaMG6vrl7C1El
+j1Btt4ccNw==</DigestValue></Reference></SignedInfo><SignatureValue>AXz/5+/AeYIqYb99Qu3vGt+eJibf3TbpIs1ZUnhtKgVcgzHTpqt302Nlh5sexZZ1MTkZo7r+OqvT
+gOHwlGvsmQ/qShjr170p/YmNY+dAryjTItVqazmJKA+NALInZVzTnfeirT5+27rMe+QahGH5wtlX
+iAfB6mMwTRbhypPsSc2LctjKLt/O66nvfqFlR2EduhaLl92AE5e39OLw6xURhy7QKwIyMwzTA/n7
+N4gt1yjGGoaUp8rUYAYhy/BmaM/eNUoajWaLWAaOq+7UuQ+aKDq9fNx+6Wx39UnPP842TcwqS/EJ
+HnxXTYcV+nabgQPfHkZzytBGPZcGGce9mM9nAg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -176,4 +158,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eba2d6a0-31cf-4d51-9151-72e3b543c2ea" Target="#_b82adf66-589d-4fe6-831d-5fb65cd4fd4a"><Timestamp>2019-02-22 14:39:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a3408052-d804-4c7f-a538-ab500a541804" Target="#_fe8f9ab2-79ac-4c70-9b9f-ceba629f94c2"><Timestamp>2019-02-23 09:09:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
